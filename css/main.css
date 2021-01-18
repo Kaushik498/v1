@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #031923;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  color: #658E8C;
+  width: 50%;
+  margin-top: 7em;
+  border: none;
+  border-top: 1px solid #658E8C;
+}
+
+section {
+  padding: 2em 4em;
+  text-align: center;
+}
+
+.links-in-descriptions {
+  color: #4B74C3;
+}
+
+.topic-name {
+  color: #658E8C;
+  font-size: 16px;
+}
+
+.home-page-links {
+  color: #345654;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #041f2b;
+  padding: 1em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  color: #7A9F9D;
+  padding: 0 1em;
+  font-size: 14;
+}
+
+.logo {
+  color: #4B74C3;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border-top: 1px solid #4B74C3;
+  border-bottom: 1px solid #4B74C3;
+  margin-left: 3em;
+}
+
+.resume-button {
+  border: 1px solid #a5cfcd;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 8px;
+}
+
+.start-page {
+  padding-top: 6em;
+  padding-bottom: 4em;
+  padding-right: 4em;
+  padding-left: 4em;
+  text-align: left;
+}
+
+.start-page p {
+  padding: 0;
+  margin: 0;
+}
+
+.hi-block {
+  white-space: pre;
+  color: #658E8C;
+  font-size: 26px;
+}
+
+.my-name {
+  color: #BBE2E0;
+  font-size: 66px;
+  font-weight: bold;
+}
+
+.my-short-desc {
+  color: #345654;
+  font-size: 16px;
+  max-width: 40%;
+}
+
+.about-section {
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.about-section .left {
+  color: #345654;
+  display: -ms-grid;
+  display: grid;
+  padding-right: 4em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  text-align: left;
+  place-content: center;
+}
+
+.about-section .left ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: circle;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.about-section .left ul li ul {
+  display: none;
+}
+
+.about-section .left ul li:hover ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-section .left ul li:hover ul li {
+  padding: 1em;
+}
+
+.about-section img {
+  place-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 3em;
+  max-width: 135px;
+  max-height: 200px;
+  border: 2px solid black;
+}
+
+.payu ul {
+  list-style-type: circle;
+  color: #345654;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 60%;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.website-project {
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.website-project .left {
+  text-align: left;
+  color: #345654;
+  padding: 4em 4em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.website-project .left ul {
+  list-style-type: circle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.website-project .left ul li {
+  margin: 1em;
+}
+
+.website-project img {
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+  max-height: 350px;
+  border: 2px solid black;
+}
+
+.alohamora {
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.alohamora .left {
+  text-align: left;
+  color: #345654;
+  padding: 4em 4em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.alohamora .left ul {
+  list-style-type: circle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alohamora .left ul li {
+  margin: 1em;
+}
+
+.alohamora img {
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+  max-height: 350px;
+  border: 2px solid black;
+}
+
+.bottom-bar {
+  place-content: center;
+}
+
+.bottom-bar footer {
+  background-color: #041f2b;
+  margin: 0 auto;
+  padding: 1em 4em;
+}
+
+.bottom-bar footer p {
+  text-align: center;
+  margin: 0 auto;
+  color: #7A9F9D;
+  font-size: 16px;
+}
+
+.bottom-bar footer ul {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+}
+
+.bottom-bar footer ul li {
+  padding: 1em;
+}
+
+.bottom-bar footer ul li a img {
+  max-width: 1.5em;
+  max-height: 1.5em;
+}
+/*# sourceMappingURL=main.css.map */
