@@ -36,6 +36,29 @@ section {
   color: #4B74C3;
 }
 
+.image-holder {
+  position:relative; 
+  max-height: min-content;
+}
+
+.image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(52, 86, 84, 0.5);
+  transition: all .3s linear;
+  padding: 0;
+  margin: 0;
+}
+
+.image-holder:hover:before { 
+  background: none;
+}
+
 .topic-name {
   color: #658E8C;
   font-size: 16px;
@@ -123,34 +146,23 @@ header ul a {
 
 .about-section {
   place-content: center;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-columns: 40% auto;
+  grid-template-rows: auto;
 }
 
 .about-section .left {
-  color: #345654;
-  display: -ms-grid;
-  display: grid;
-  padding-right: 4em;
-  font-size: 0.9em;
-  line-height: 1.3em;
   text-align: left;
-  place-content: center;
+  color: #345654;
+  padding: 0em 3em;
+  font-size: 0.85em;
+  line-height: 1.4em;
 }
 
 .about-section .left ul {
-  padding: 0;
-  margin: 0;
-  display: block;
   list-style-type: circle;
-  -ms-grid-columns: 50% auto;
-      grid-template-columns: 50% auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  display: list-item;
+  margin: 1em;
 }
 
 .about-section .left ul li ul {
@@ -159,8 +171,6 @@ header ul a {
 
 .about-section .left ul li:hover ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -168,13 +178,15 @@ header ul a {
   padding: 1em;
 }
 
-.about-section img {
-  place-content: center;
+.about-section .image-holder {
+  position: center;
+  max-width: 160px;
+  max-height: 200px;
+}
+
+.about-section .image-holder img {
   padding: 0;
   margin: 0;
-  margin-top: 3em;
-  max-width: 135px;
-  max-height: 200px;
   border: 2px solid black;
 }
 
@@ -218,11 +230,16 @@ header ul a {
   margin: 1em;
 }
 
-.website-project img {
+.website-project .image-holder {
+  position: center;
+  margin-top: 3em;
+  max-width: 370px;
+  max-height: 190px;
+}
+
+.website-project .image-holder img {
   padding: 0;
   margin: 0;
-  max-width: 400px;
-  max-height: 350px;
   border: 2px solid black;
 }
 
@@ -255,7 +272,14 @@ header ul a {
   margin: 1em;
 }
 
-.alohamora img {
+.alohamora .image-holder {
+  position: center;
+  margin-top: 3em;
+  max-width: 370px;
+  max-height: 250px;
+}
+
+.alohamora .image-holder img {
   padding: 0;
   margin: 0;
   max-width: 400px;
@@ -275,9 +299,11 @@ header ul a {
 
 .bottom-bar footer p {
   text-align: center;
+  padding-bottom: 1em;
   margin: 0 auto;
   color: #7A9F9D;
   font-size: 16px;
+  /* border-bottom: 1px solid #7A9F9D; */
 }
 
 .bottom-bar footer ul {
