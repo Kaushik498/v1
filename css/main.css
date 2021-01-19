@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -20,11 +20,11 @@ img {
 }
 
 hr {
-  color: #658E8C;
+  color: #7A9F9D;
   width: 50%;
   margin-top: 7em;
   border: none;
-  border-top: 1px solid #658E8C;
+  border-top: 1px solid #7A9F9D;
 }
 
 section {
@@ -36,8 +36,14 @@ section {
   color: #4B74C3;
 }
 
+.highlight-in-descriptions {
+  color: #548582;
+}
+
 .image-holder {
-  position:relative; 
+  position: relative;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
   max-height: min-content;
 }
 
@@ -50,22 +56,32 @@ section {
   left: 0;
   right: 0;
   background: rgba(52, 86, 84, 0.5);
+  -webkit-transition: all .3s linear;
   transition: all .3s linear;
   padding: 0;
   margin: 0;
 }
 
-.image-holder:hover:before { 
+.image-holder:hover:before {
   background: none;
 }
 
 .topic-name {
-  color: #658E8C;
-  font-size: 16px;
+  color: #4B74C3;
+  font-size: 1em;
+  place-content: center;
+  display: inline-block;
+}
+
+.count {
+  color: #548582;
+  font-size: 1em;
+  place-content: center;
+  margin-right: 0.5em;
 }
 
 .home-page-links {
-  color: #345654;
+  color: #7A9F9D;
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
@@ -128,7 +144,7 @@ header ul a {
 
 .hi-block {
   white-space: pre;
-  color: #658E8C;
+  color: #7A9F9D;
   font-size: 26px;
 }
 
@@ -146,31 +162,63 @@ header ul a {
 
 .about-section {
   place-content: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 40% auto;
-  grid-template-rows: auto;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 .about-section .left {
   text-align: left;
-  color: #345654;
   padding: 0em 3em;
   font-size: 0.85em;
   line-height: 1.4em;
+  color: #345654;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .about-section .left ul {
-  list-style-type: circle;
-  display: list-item;
+  padding: 0;
   margin: 1em;
+  display: block;
+}
+
+.about-section .left ul li p {
+  color: #548582;
+}
+
+.about-section .left ul li p img {
+  max-width: 1em;
+  max-height: 1em;
 }
 
 .about-section .left ul li ul {
   display: none;
 }
 
+.about-section .left ul li ul li {
+  color: #345654;
+  padding: 0.2em;
+  margin: 0.5em;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.about-section .left ul li:hover p img {
+  max-width: 1em;
+  max-height: 1em;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .about-section .left ul li:hover ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -182,9 +230,11 @@ header ul a {
   position: center;
   max-width: 160px;
   max-height: 200px;
+  margin-top: 3em;
 }
 
 .about-section .image-holder img {
+  place-content: center;
   padding: 0;
   margin: 0;
   border: 2px solid black;
@@ -198,15 +248,15 @@ header ul a {
   margin: 0 auto;
   max-width: 60%;
   font-size: 0.9em;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 .website-project {
   place-content: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -220,27 +270,17 @@ header ul a {
 }
 
 .website-project .left ul {
-  list-style-type: circle;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #548582;
 }
 
 .website-project .left ul li {
-  margin: 1em;
-}
-
-.website-project .image-holder {
-  position: center;
-  margin-top: 3em;
-  max-width: 370px;
-  max-height: 190px;
-}
-
-.website-project .image-holder img {
-  padding: 0;
-  margin: 0;
-  border: 2px solid black;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1.5px solid;
+  border-radius: 10px;
 }
 
 .alohamora {
@@ -262,14 +302,17 @@ header ul a {
 }
 
 .alohamora .left ul {
-  list-style-type: circle;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #548582;
 }
 
 .alohamora .left ul li {
-  margin: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1.5px solid;
+  border-radius: 10px;
 }
 
 .alohamora .image-holder {
@@ -282,8 +325,6 @@ header ul a {
 .alohamora .image-holder img {
   padding: 0;
   margin: 0;
-  max-width: 400px;
-  max-height: 350px;
   border: 2px solid black;
 }
 
@@ -299,11 +340,10 @@ header ul a {
 
 .bottom-bar footer p {
   text-align: center;
-  padding-bottom: 1em;
   margin: 0 auto;
   color: #7A9F9D;
   font-size: 16px;
-  /* border-bottom: 1px solid #7A9F9D; */
+  padding-bottom: 1em;
 }
 
 .bottom-bar footer ul {

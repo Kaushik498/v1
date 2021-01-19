@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="191.64000000000001" height="191.64000000000001" xml:space="preserve">
+<desc>Created with Fabric.js 1.6.0-rc.1</desc>
+<defs></defs>
+<g style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(22.249999999999993 42.010000000000026) scale(0.26 0.26)" >
+  <path d="M 317 471 l -72 -217 H 9 L 462 0 L 317 471 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #4b73c3; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+<g style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(10 10) scale(0.28 0.28)" >
+  <path d="M 306 0 C 137.012 0 0 137.012 0 306 c 0 169.026 137.012 306 306 306 s 306 -136.974 306 -306 C 612 137.012 474.988 0 306 0 z M 306 573.75 C 158.125 573.75 38.25 453.875 38.25 306 C 38.25 158.125 158.125 38.25 306 38.25 c 147.875 0 267.75 119.875 267.75 267.75 C 573.75 453.875 453.875 573.75 306 573.75 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #4b73c6; fill-rule: nonzero; opacity: 1;" transform="" stroke-linecap="round" />
+</g>
+</svg>

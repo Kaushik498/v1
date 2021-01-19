@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
-$headercolour: #658E8C;
+$headercolour: #7A9F9D;
 $paragraphcolour: #345654;
 $linkcolour: #4B74C3;
-
+$topictcolour: #80a8a6;
+$highlightcolour: #548582;
+$global-background-color: #031923;
+$mynamecolor: #BBE2E0;
 // below 400
 
 body{
@@ -43,13 +46,49 @@ section{
     color: $linkcolour;
 }
 
+.highlight-in-descriptions{
+    color: $highlightcolour;
+}
+
+.image-holder {
+    position:relative; 
+    max-height: min-content;
+}
+  
+.image-holder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(52, 86, 84, 0.5);
+    transition: all .3s linear;
+    padding: 0;
+    margin: 0;
+}
+  
+.image-holder:hover:before { 
+    background: none;
+  }
+
 .topic-name{
-    color: $headercolour;
-    font-size: 16px;
+    color: $linkcolour;
+    font-size: 1em;
+    place-content: center;
+    display: inline-block;
+}
+
+.count{
+    color: $highlightcolour;
+    font-size: 1em;
+    place-content: center;
+    margin-right: 0.5em;
 }
 
 .home-page-links{
-    color: $paragraphcolour;
+    color: $headercolour;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
@@ -128,26 +167,44 @@ header{
 
     .left{
         
+        text-align: left;
+        padding: 0em 3em;
+        font-size: 0.85em;
+        line-height: 1.4em;
         color: $paragraphcolour;
         display: grid;
-        padding-right: 4em;
-        font-size: 0.9em;
-        line-height: 1.3em;
-        text-align: left;
         place-content: center;
     
         ul{
             padding: 0;
-            margin: 0;
+            margin: 1em;
             display: block;
-            list-style-type: circle;
-            grid-template-columns: 50% auto;
-            grid-template-rows: auto;
-            li ul {
-                display: none;
+            li {
+                p{
+                    color: $highlightcolour;
+                    img{
+                        max-width: 1em;
+                        max-height: 1em;
+                    }
+                }
+                ul {
+                    li{
+                        color: $paragraphcolour;
+                        padding: 0.2em;
+                        margin: 0.5em;
+                        border: 1px solid;
+                        border-radius: 10px;
+                    }
+                    display: none;
+                }
             }
 
             li:hover {
+                p img{
+                    max-width: 1em;
+                    max-height: 1em;
+                    transform: rotate(90deg);
+                }
                 ul {
                     list-style-type: none;
                     display: flex;
@@ -159,14 +216,18 @@ header{
         }
     }
 
-    img{
-        place-content: center;
-        padding: 0;
-        margin: 0;
-        margin-top: 3em;
-        max-width: 135px;
+    .image-holder {
+        position: center;
+        max-width: 160px;
         max-height: 200px;
-        border: 2px solid black;
+        margin-top: 3em;
+
+        img {
+            place-content: center;
+            padding: 0;
+            margin: 0;
+            border: 2px solid black;
+        }
     }
 }
 
@@ -180,7 +241,7 @@ header{
         margin: 0 auto;
         max-width: 60%;
         font-size: 0.9em;
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 }
 
@@ -188,7 +249,7 @@ header{
 
     place-content: center;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 50% auto;
     grid-template-rows: auto;
     
     .left{
@@ -199,20 +260,16 @@ header{
         line-height: 1.3em;
         
         ul{
-            list-style-type: circle;
             display: flex;
+            color: $highlightcolour;
             li{
-                margin: 1em;
+                padding: 0.5em;
+                margin: 0.5em;
+                border: 1.5px solid ;
+                border-radius: 10px;
             }
-        }
-    }
 
-    img{
-        padding: 0;
-        margin: 0;
-        max-width: 400px;
-        max-height: 350px;
-        border: 2px solid black;
+        }
     }
 }
 
@@ -231,20 +288,28 @@ header{
         line-height: 1.3em;
         
         ul{
-            list-style-type: circle;
             display: flex;
+            color: $highlightcolour;
             li{
-                margin: 1em;
+                padding: 0.5em;
+                margin: 0.5em;
+                border: 1.5px solid ;
+                border-radius: 10px;
             }
         }
     }
 
-    img{
-        padding: 0;
-        margin: 0;
-        max-width: 400px;
-        max-height: 350px;
-        border: 2px solid black;
+    .image-holder {
+        position: center;
+        margin-top: 3em;
+        max-width: 370px;
+        max-height: 250px;
+
+        img{
+            padding: 0;
+            margin: 0;
+            border: 2px solid black;
+        }
     }
 }
 
@@ -262,6 +327,7 @@ header{
             margin: 0 auto;
             color: #7A9F9D;
             font-size: 16px;
+            padding-bottom: 1em;
         }
 
         ul{

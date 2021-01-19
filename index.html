@@ -16,9 +16,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work Ex</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#work-ex">Work Ex</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
                     <li><a href="#" class="resume-button">Resume</a></li>
                 </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
             </nav>
@@ -32,7 +32,7 @@
             I specialize in building and creating backend (and occasionally the frontend) of scalable and efficient high quality web services.</p>
     </div>
 
-    <hr>
+    <hr id="about-me">
     <p class="home-page-links">A little about me<br></p>
     <section class="about-section">
         <div class="left">
@@ -44,7 +44,7 @@
             </p>
             <ul>
                 <li>
-                    <p>Programming Languages</p>
+                    <p><img src="resource/list-arrow.png" alt=""> Programming Languages</p>
                     <ul>
                         <li>Java, SQL (Expert)</li>
                         <li>Python, JavaScript, PHP (Proficient)</li>
@@ -52,21 +52,21 @@
                     </ul>
                 </li>
                 <li>
-                    <p>Frameworks</p>
+                    <p><img src="resource/list-arrow.png" alt=""> Frameworks</p>
                     <ul>
                         <li>Spring Boot, Spring Data JPA, JDBC, Junit (Expert)</li>
                         <li>Jax ws/rs, Sass for Css (Proficient)</li>
                     </ul>
                 </li>
                 <li>
-                    <p>Libraries</p>
+                    <p><img src="resource/list-arrow.png" alt=""> Libraries</p>
                     <ul>
                         <li>Hystrix for Netflix, JPOS, ISO 85883 (Expert)</li>
                         <li>Prometheus, Composer PHP, Junit Spock (Proficient)</li>
                     </ul>
                 </li>
                 <li>
-                    <p>Tools</p>
+                    <p><img src="resource/list-arrow.png" alt=""> Tools</p>
                     <ul>
                         <li>Postman, Sequel Pro, Kibana, Prometheus dashboard, VS Code, IntelliJ (Expert)</li>
                         <li>Tomcat, Grafana dashboard (Proficient)</li>
@@ -79,27 +79,27 @@
         </div>
     </section>
 
-    <hr>
+    <hr id="work-ex">
     <p class="home-page-links">Work Experience<br></p>
     <section class="work-ex">
         <div class="payu">
-            <p><a class="topic-name" href="https://www.payu.in">Payu</a></p>
+            <p><a class="topic-name" href="https://www.payu.in"><span class="count">01.</span>Payu</a></p>
             <ul>
                 <li>
                     My day to day responsibilities include building new features and managing 5 web servives. 
                     All new features are completed with rigorous unit testings.
                 </li>
                 <li>
-                    I have <span class="links-in-descriptions">personally redesigned and rewritten a client facing microservice</span> that is reponsible for processing 
-                    online card transactions of several major banks in India(e.g. SBI, AMEX, HDFC etc). <span class="links-in-descriptions">This upgraded system 
+                    I have <span class="highlight-in-descriptions">personally redesigned and rewritten a client facing microservice</span> that is reponsible for processing 
+                    online card transactions of several major banks in India(e.g. SBI, AMEX, HDFC etc). <span class="highlight-in-descriptions">This upgraded system 
                     has shown 30% increase in max TPS, 60% decrease in max latency and it has ~92% unit test coverage.</span>
                 </li>
                 <li>
-                    Extensively used <span class="links-in-descriptions">Kibana</span> and <span class="links-in-descriptions">Grafana dashboard</span> and alerting for real time monitoring of web services health 
+                    Extensively used <span class="highlight-in-descriptions">Kibana</span> and <span class="highlight-in-descriptions">Grafana dashboard</span> and alerting for real time monitoring of web services health 
                     and performance.
                 </li>
                 <li>
-                    Created <span class="links-in-descriptions">Custom library on top of Hystrix for dynamically handling fallback and selecting preferred transaction flow</span>. 
+                    Created <span class="highlight-in-descriptions">Custom library on top of Hystrix for dynamically handling fallback and selecting preferred transaction flow</span>. 
                     Integrated it as a feature in the existing web services for maintaining the already established line of communication 
                     with reduced latency and fail rate, making the client experience smoother and faster.
                 </li>
@@ -107,11 +107,11 @@
         </div>
     </section>
 
-    <hr>
+    <hr id="my-projects">
     <p class="home-page-links">Featured Projects <br></p>
     <section class="website-project">
         <div class="left">
-            <p><a class="topic-name" href="https://github.com/Kaushik498/Portfolio-Website">Porfolio Website</a></p>
+            <p><a class="topic-name" href="https://github.com/Kaushik498/Portfolio-Website"><span class="count">01.</span>Porfolio Website</a></p>
             <p>It is the very same website you are on right now. Do drop a message and say hello. <br>
             Although the codebase is completely written by me, the UI/UX design was inspired from 
             <a class="links-in-descriptions" href="https://brittanychiang.com/">Brittany Chiang</a>. 
@@ -120,23 +120,21 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>SASS</li>
-                <li>Github Page</li>
+                <li>Github.io</li>
             </ul>
-        </div>
-        <div class="image-holder">
-            <img src="resource/Website-SS.jpg" alt="[Website Screenshot]">
         </div>
     </section>
     
     <section class="alohamora">
         <div class="left">
-            <p><a class="topic-name" href="https://github.com/Kaushik498/Password-Manager">AlohaMora [WIP]</a></p>
+            <p><a class="topic-name" href="https://github.com/Kaushik498/Password-Manager"><span class="count">02.</span>AlohaMora [WIP]</a></p>
             <p>AlohaMora is a free, open source password management software. <br></p>
             <p>This project is still in the making. The desktop app is almost completed. My next step for this project will be to make the browser extension.</p>
             <ul>
                 <li>Python</li>
-                <li>FireBase Authenticator</li>
-                <li>FireBase Realtime Database</li>
+                <li>FireBase</li>
+                <li>Pyside2</li>
+                <li>Qt</li>
             </ul>
         </div>
         <div class="image-holder">
@@ -151,7 +149,7 @@
                 <li><a href="https://www.linkedin.com/in/kaushik-b-21a8b2110/"><img src="resource/linkedIn.svg" alt="[LinkedIn]"></a></li>
                 <li><a href="https://github.com/Kaushik498"><img src="resource/github.svg" alt="[Github]"></a></li>
                 <li><a href="https://stackoverflow.com/users/14562555/kaushik"><img src="resource/stackOverflow.svg" alt="[StackOverflow]"></a></li>
-                <li><a href="kaushik.biswas.15@gmail.com"><img src="resource/gmail.svg" alt="[Gmail]"></a></li>
+                <li><a href="kaushik.biswas.15@gmail.com"><img src="resource/email.svg" alt="[Gmail]"></a></li>
             </ul>
         </footer>
     </div>
