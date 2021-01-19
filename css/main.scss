@@ -187,19 +187,20 @@ header{
     grid-template-rows: auto;
 
     @media(max-width: 820px){
-        display: inline-block;
+        display: block;
     }
 
     .left{
         
         text-align: left;
         padding: 0em 3em;
-        @media(max-width: 400px){
+        @media(max-width: 600px){
             padding: 0em 2em;
         }
-        @media(max-width: 300px){
+        @media(max-width: 500px){
             padding: 0em 1em;
         }
+        
         p{
             padding: 0;
             margin: 0;
@@ -322,14 +323,8 @@ header{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 60% auto;
-    @media(max-width: 910px){
-        grid-template-columns: 70% auto;
-    }
-    @media(max-width: 660px){
-        grid-template-columns: 80% auto;
-    }
-    @media(max-width: 500px){
-        grid-template-columns: 90% auto;
+    @media(max-width: 870px){
+        display: block;
     }
     .left{
         text-align: left;

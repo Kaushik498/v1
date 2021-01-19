@@ -226,7 +226,7 @@ header ul a {
 
 @media (max-width: 820px) {
   .about-section {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -239,13 +239,13 @@ header ul a {
   place-content: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .about-section .left {
     padding: 0em 2em;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .about-section .left {
     padding: 0em 1em;
   }
@@ -407,24 +407,9 @@ header ul a {
       grid-template-columns: 60% auto;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 870px) {
   .website-project {
-    -ms-grid-columns: 70% auto;
-        grid-template-columns: 70% auto;
-  }
-}
-
-@media (max-width: 660px) {
-  .website-project {
-    -ms-grid-columns: 80% auto;
-        grid-template-columns: 80% auto;
-  }
-}
-
-@media (max-width: 500px) {
-  .website-project {
-    -ms-grid-columns: 90% auto;
-        grid-template-columns: 90% auto;
+    display: block;
   }
 }
 
