@@ -3,9 +3,11 @@
  * @author - kaushik498
 **/
 
-// hide & show header
+// all variables
 var lastScrollPos = 0 ;
 header = document.querySelector("header");
+
+// hide & show header
 window.addEventListener("scroll", function(){
     var currScrollPos = window.pageYOffset || document.documentElement.currScrollPos ;
     if(currScrollPos > lastScrollPos){
@@ -15,3 +17,5 @@ window.addEventListener("scroll", function(){
     }
     lastScrollPos = currScrollPos ;
 });
+
+// hamburger menu animation
