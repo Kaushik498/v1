@@ -20,11 +20,11 @@ img {
 }
 
 hr {
-  color: #7A9F9D;
+  color: #afeaed;
   width: 50%;
   margin-top: 7em;
   border: none;
-  border-top: 1px solid #7A9F9D;
+  border-top: 1px solid #afeaed;
 }
 
 section {
@@ -37,7 +37,7 @@ section {
 }
 
 .highlight-in-descriptions {
-  color: #548582;
+  color: #82cfba;
 }
 
 .image-holder {
@@ -55,7 +55,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(52, 86, 84, 0.5);
+  background: rgba(118, 232, 202, 0.5);
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
   padding: 0;
@@ -74,14 +74,14 @@ section {
 }
 
 .count {
-  color: #548582;
+  color: #82cfba;
   font-size: 1em;
   place-content: center;
   margin-right: 0.5em;
 }
 
 .home-page-links {
-  color: #7A9F9D;
+  color: #afeaed;
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
@@ -144,7 +144,7 @@ header ul a {
 
 .hi-block {
   white-space: pre;
-  color: #7A9F9D;
+  color: #afeaed;
   font-size: 26px;
 }
 
@@ -155,7 +155,7 @@ header ul a {
 }
 
 .my-short-desc {
-  color: #345654;
+  color: #73aec7;
   font-size: 16px;
   max-width: 40%;
 }
@@ -175,7 +175,7 @@ header ul a {
   padding: 0em 3em;
   font-size: 0.85em;
   line-height: 1.4em;
-  color: #345654;
+  color: #73aec7;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -188,7 +188,7 @@ header ul a {
 }
 
 .about-section .left ul li p {
-  color: #548582;
+  color: #82cfba;
 }
 
 .about-section .left ul li p img {
@@ -201,8 +201,8 @@ header ul a {
 }
 
 .about-section .left ul li ul li {
-  color: #345654;
-  padding: 0.2em;
+  color: #73aec7;
+  padding: 0;
   margin: 0.5em;
   border: 1px solid;
   border-radius: 10px;
@@ -217,13 +217,14 @@ header ul a {
 
 .about-section .left ul li:hover ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% auto;
+      grid-template-columns: 33% 33% auto;
 }
 
 .about-section .left ul li:hover ul li {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .about-section .image-holder {
@@ -242,7 +243,7 @@ header ul a {
 
 .payu ul {
   list-style-type: circle;
-  color: #345654;
+  color: #73aec7;
   text-align: left;
   padding: 0;
   margin: 0 auto;
@@ -263,7 +264,7 @@ header ul a {
 
 .website-project .left {
   text-align: left;
-  color: #345654;
+  color: #73aec7;
   padding: 4em 4em;
   font-size: 0.9em;
   line-height: 1.3em;
@@ -273,7 +274,7 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #548582;
+  color: #82cfba;
 }
 
 .website-project .left ul li {
@@ -295,7 +296,7 @@ header ul a {
 
 .alohamora .left {
   text-align: left;
-  color: #345654;
+  color: #73aec7;
   padding: 4em 4em;
   font-size: 0.9em;
   line-height: 1.3em;
@@ -305,7 +306,7 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #548582;
+  color: #82cfba;
 }
 
 .alohamora .left ul li {

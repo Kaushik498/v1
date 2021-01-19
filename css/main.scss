@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
-$headercolour: #7A9F9D;
-$paragraphcolour: #345654;
+$headercolour: #afeaed;
+$paragraphcolour: #73aec7;
 $linkcolour: #4B74C3;
 $topictcolour: #80a8a6;
-$highlightcolour: #548582;
+$highlightcolour: #82cfba;
 $global-background-color: #031923;
-$mynamecolor: #BBE2E0;
+$mynamecolor: #d8f2f1;
 // below 400
 
 body{
@@ -63,7 +63,7 @@ section{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(52, 86, 84, 0.5);
+    background: rgba(118, 232, 202, 0.5);
     transition: all .3s linear;
     padding: 0;
     margin: 0;
@@ -190,7 +190,7 @@ header{
                 ul {
                     li{
                         color: $paragraphcolour;
-                        padding: 0.2em;
+                        padding: 0;
                         margin: 0.5em;
                         border: 1px solid;
                         border-radius: 10px;
@@ -207,9 +207,10 @@ header{
                 }
                 ul {
                     list-style-type: none;
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: 33% 33% auto;
                     li{
-                        padding: 1em;
+                        padding: 0.5em;
                     }
                 }
             }
