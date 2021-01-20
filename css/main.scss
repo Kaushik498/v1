@@ -7,7 +7,6 @@ $topictcolour: #80a8a6;
 $highlightcolour: #82cfba;
 $global-background-color: #031923;
 $mynamecolor: #d8f2f1;
-// below 400
 
 body{
     margin: 0;
@@ -83,22 +82,125 @@ section{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-
+.top-bar{
+    padding: 0;
+    margin: 0;
+}
 header{
     position: fixed;
     width: 100%;
-    height: 28px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     background-color: #041f2b;
-    padding: 1em;
+    padding: 1em 0em;
     ul{
         display: flex;
+        @media(max-width: 820px){
+            display: none;
+        }
         padding: 0 2em;
         a{
-            color: #7A9F9D;
-            padding: 0 1em;
-            font-size: 14;
+            color: $paragraphcolour;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            border-radius: 8px;
+        }
+        li{
+            padding: 0.3em;
+        }
+        .resume-button{
+            color: #9ecfce;
+            border: 1px solid #9ecfce;
+        }
+    }
+    .toggle-menu{
+        display: none;
+        place-content: center;
+        @media(max-width: 820px){
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        top: auto;
+        // transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        transition: .3s ease-in-out;
+
+        .line1{
+            width: 30px;
+            height: 3px;
+            background-color: $mynamecolor;
+            border-radius: 10px;     
+            margin: auto;
+        }
+        .line2{
+            width: 30px;
+            height: 3px;
+            background-color: $mynamecolor;
+            border-radius: 10px;            
+            margin: auto;
+        }
+        .line3{
+            width: 30px;
+            height: 3px;
+            background-color: $mynamecolor;
+            border-radius: 10px;            
+            margin: auto;
+        }
+    }
+}
+
+.toggled-nav-bar{
+    background-color: $mynamecolor;
+    height: 100vh;
+    width: 40%;
+    left: -60%;
+    @media(max-width: 650px){
+        width: 50%;
+    }
+    @media(max-width: 440px){
+        width: 55%;
+    }
+    display: none;
+    @media(max-width: 820px){
+        position: fixed;
+        display: block;
+    }
+    ul{
+        display: none;
+        @media(max-width: 820px){
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2em;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        li{
+            padding: 1em;
+        }
+        a{
+            color: #13323f;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            border-radius: 8px;
+        }
+        a:hover{
+            background-color: #88aebe;
+        }
+        .resume-button{
+            border: 1px solid #031923;
+            color: #031923;
         }
     }
 }
@@ -109,16 +211,14 @@ header{
     font-size: 1.2em;
     border-top: 1px solid $linkcolour;
     border-bottom: 1px solid $linkcolour;
-    margin-left: 3em;
-}
-
-.resume-button{
-    border: 1px solid #a5cfcd;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border-radius: 8px;
+    padding-bottom: 2px;
+    margin-left: 4em;
+    @media(max-width: 680px){
+        margin-left: 3em;
+    }
+    @media(max-width: 340px){
+        margin-left: 40px;
+    }
 }
 
 .start-page{
