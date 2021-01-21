@@ -82,10 +82,48 @@ section{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+.intro{
+    position: fixed;
+    background-color: #041f2b;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .hr1{
+        width: 0%;
+        padding: 0;
+        margin: 0;
+        border:none;
+        border-top:3px solid $headercolour;
+        margin-right: 40%;
+    }
+    .hr2{
+        width: 0%;
+        padding: 0;
+        margin: 0;
+        border:none;
+        border-top:3px solid $headercolour;
+        margin-left: 40%;
+    }
+    .intro-name{
+        color: $headercolour;
+        font-size: 4em;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0;
+    }
+}
+
 .top-bar{
     padding: 0;
     margin: 0;
 }
+
 header{
     position: fixed;
     width: 100%;

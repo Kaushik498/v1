@@ -11,7 +11,36 @@ var sidenavopen = false ;
 var header = document.querySelector("header");
 var togglemenu = document.querySelector(".toggle-menu");
 var toggledbarbuttons = document.querySelectorAll(".toggled-nav-bar ul li");
-var mobileview = window.matchMedia("max-width: 820px");
+
+// Intro animation
+gsap.to('.hr1', {
+    duration:0.5,
+    width:'20%',
+    marginRight:'0'
+})
+gsap.to('.hr2', {
+    duration:0.5,
+    width:'20%',
+    marginLeft:'0'
+})
+
+gsap.from('.intro-name', {
+    ease: Elastic.easeOut.config(1, 0.1),
+    duration:3,
+    y: 40,
+    delay:0.5
+})
+gsap.from('.intro-name', {
+    ease: Expo.easeOut,
+    duration:0.5,
+    opacity:0,
+    delay:0.5
+})
+gsap.to('.intro', {
+    duration: 0.8,
+    y: '-100%',
+    delay: 2.5
+})
 
 
 // hide & show header
